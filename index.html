@@ -9,11 +9,26 @@
     <title>SortNinja</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script>
+      $( function() {
+        $( "img" ).draggable({axis: 'y', containment : "parent" });
+      } );
+    </script>
   </head>
   <body>
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    
+    <div class="draggable">
+      <img src="sorting_images/sort2.png" alt="img">
+      <img src="sorting_images/sort1.png" alt="img">
+      <img src="sorting_images/sort3.png" alt="img">
+      <img src="sorting_images/sort5.png" alt="img">
+      <img src="sorting_images/sort4.png" alt="img">
+    </div>
   </body>
 </html>
